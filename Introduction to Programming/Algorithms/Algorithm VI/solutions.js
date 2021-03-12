@@ -24,7 +24,7 @@ console.log(resetNegatives([1, 2, -1, -3]));
 
 function moveForward(arr) {
   for (var i = 0; i < arr.length; i++) {
-    if (i === arr.length - 1) {
+    if (i == arr.length - 1) {
       arr[i] = 0;
     } else {
       arr[i] = arr[i + 1];
