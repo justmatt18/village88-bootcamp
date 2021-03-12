@@ -148,7 +148,9 @@ function displayWorld() {
     }
     output += "\n</div>";
   }
+
   document.getElementById("world").innerHTML = output;
+
   if (coinsCount == 0 && cherryCount == 0) {
     document.getElementById("game-over").innerHTML = "GAME OVER!! ";
   }

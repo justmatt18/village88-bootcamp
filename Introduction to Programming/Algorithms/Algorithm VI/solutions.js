@@ -37,8 +37,22 @@ console.log(moveForward([1, 2, 3, 5, 9, 10]));
 
 // ======================================================= //
 
+// #3  Return Reverse
+function returnReverse(arr) {
+  for (var i = 0; i < arr.length / 2; i++) {
+    var temp = arr[arr.length - 1 - i];
+    arr[arr.length - 1 - i] = arr[i];
+    arr[i] = temp;
+  }
+  return arr;
+}
+
+// ======================================================= //
+
 // #4
-// Create a function that changes a given array to list each original element twice, retaining original order.  Have the function return the new array.  For example repeatTwice( [4,”Ulysses”, 42, false] ) should return [4,4, “Ulysses”, “Ulysses”, 42, 42, false, false].
+// Create a function that changes a given array to list each original element twice, retaining original order.
+// Have the function return the new array.  For example repeatTwice( [4,”Ulysses”, 42, false] )
+// should return [4,4, “Ulysses”, “Ulysses”, 42, 42, false, false].
 
 function repeatTwice(arr) {
   var repeatedArr = [];

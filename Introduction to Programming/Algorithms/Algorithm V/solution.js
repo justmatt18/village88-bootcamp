@@ -54,7 +54,9 @@ function replaceNegatives(arr) {
 console.log(replaceNegatives([1, 2, -3, -5, 5]));
 
 //4
-// Given array, and indices start and end, remove values in that index range, working in-place (hence shortening the array).  For example, removeVals([20,30,40,50,60,70],2,4) should return [20,30,70].
+// Given array, and indices start and end, remove values in that index range,
+// working in-place (hence shortening the array).  For example,
+// removeVals([20,30,40,50,60,70],2,4) should return [20,30,70].
 
 function removeVals(arr, start, end) {
   var newArr = [];
